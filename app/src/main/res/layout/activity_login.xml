@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/emaviasFondo"
+        android:src="@drawable/emavias_fondo"
         android:scaleType="centerCrop"
         />
     <LinearLayout
@@ -23,7 +23,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginBottom="50dp"
-        android:src="@drawable/EMAVIAS" />
+        android:src="@drawable/emavias" />
         <EditText
         android:id="@+id/et_correo"
         android:layout_width="match_parent"

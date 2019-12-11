@@ -8,9 +8,10 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/emavias_fondo"
+        android:src="@drawable/emaviasFondo"
         android:scaleType="centerCrop"
         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -22,7 +23,8 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_marginBottom="50dp"
-            android:src="@drawable/emavias" />
+            android:src="@drawable/EMAVIAS" />
+
         <Button
             android:id="@+id/Ingresar"
             android:layout_width="match_parent"

@@ -2,10 +2,12 @@ package com.example.emavias;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.android.volley.Request;
@@ -38,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
         };
 
         mHandler.postDelayed(mRunnable,10*1000);*/
+        Button ingresar = (Button) findViewById(R.id.Ingresar);
+        ingresar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Login.class));
+            }
+        });
+
         String URL = "http://localhost/jsbcscmlkmisn";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 

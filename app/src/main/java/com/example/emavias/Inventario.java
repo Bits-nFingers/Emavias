@@ -9,12 +9,14 @@ import android.widget.Button;
 
 public class Inventario extends AppCompatActivity {
 
+    Button inventario;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventario);
 
-        Button inventario = (Button) findViewById(R.id.buscarInv);
+        inventario = (Button) findViewById(R.id.buscarInv);
         inventario.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

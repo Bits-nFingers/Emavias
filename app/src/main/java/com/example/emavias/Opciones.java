@@ -9,12 +9,18 @@ import android.widget.Button;
 
 public class Opciones extends AppCompatActivity {
 
+    Button almacenar;
+    Button inventario;
+    Button pedidos;
+    Button registro;
+    Button despacho;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opciones);
 
-        Button almacenar = (Button) findViewById(R.id.almacen);
+        almacenar = (Button) findViewById(R.id.almacen);
         almacenar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -23,8 +29,8 @@ public class Opciones extends AppCompatActivity {
             }
         });
 
-        Button inventario = (Button) findViewById(R.id.inventario);
-        almacenar.setOnClickListener(new View.OnClickListener(){
+        inventario = (Button) findViewById(R.id.inventario);
+        inventario.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Opciones.this, Inventario.class));
@@ -32,8 +38,8 @@ public class Opciones extends AppCompatActivity {
             }
         });
 
-        Button pedidos = (Button) findViewById(R.id.pedido);
-        almacenar.setOnClickListener(new View.OnClickListener(){
+        pedidos = (Button) findViewById(R.id.pedido);
+        pedidos.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Opciones.this, PedidoMateria.class));
@@ -41,8 +47,8 @@ public class Opciones extends AppCompatActivity {
             }
         });
 
-        Button registro = (Button) findViewById(R.id.registro);
-        almacenar.setOnClickListener(new View.OnClickListener(){
+        registro = (Button) findViewById(R.id.registro);
+        registro.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Opciones.this, RegistroMaterial.class));
@@ -50,8 +56,8 @@ public class Opciones extends AppCompatActivity {
             }
         });
 
-        Button despacho = (Button) findViewById(R.id.despacho);
-        almacenar.setOnClickListener(new View.OnClickListener(){
+        despacho = (Button) findViewById(R.id.despacho);
+        despacho.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Opciones.this, Despacho.class));

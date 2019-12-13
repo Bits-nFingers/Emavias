@@ -23,6 +23,8 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button ingresar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         };
 
         mHandler.postDelayed(mRunnable,10*1000);*/
-        Button ingresar = (Button) findViewById(R.id.Ingresar);
+        ingresar = (Button) findViewById(R.id.Ingresar);
         ingresar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

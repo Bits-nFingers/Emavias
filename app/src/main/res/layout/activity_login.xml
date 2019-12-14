@@ -25,7 +25,7 @@
         android:layout_marginBottom="50dp"
         android:src="@drawable/emavias" />
         <EditText
-        android:id="@+id/et_correo"
+        android:id="@+id/et_correoLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
@@ -44,7 +44,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_contrasena"
+            android:id="@+id/et_contrasenaLogin"
             android:hint="Contraseña"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
@@ -76,6 +76,7 @@
             android:layout_marginBottom="30dp"
             android:background="@drawable/btn_fondo_color"
             android:elevation="5dp"
+            android:onClick="ingresar"
             android:text="Inciar sesión"
             android:textColor="#000000"
             android:textSize="16sp" />

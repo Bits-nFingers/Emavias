@@ -14,11 +14,20 @@ public class OpcionesAdmin extends AppCompatActivity {
     Button pedidos;
     Button registro;
     Button despacho;
+    Button UsuarioNuevo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opciones_admin);
+
+        UsuarioNuevo = (Button) findViewById(R.id.bt_usuarioNuevo);
+        UsuarioNuevo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(OpcionesAdmin.this,RegistroUsuario.class));
+            }
+        });
 
         almacenar = (Button) findViewById(R.id.almacen);
         almacenar.setOnClickListener(new View.OnClickListener(){

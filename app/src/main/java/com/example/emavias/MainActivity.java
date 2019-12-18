@@ -16,10 +16,18 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.emavias.Interface.JsonPlaceHolderApi;
+import com.google.gson.Gson;
 
 import org.json.JSONObject;
 
 import java.net.URL;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -75,4 +83,6 @@ public class MainActivity extends AppCompatActivity {
         requestQueue.add(objectRequest);
 
     }
+
+
 }

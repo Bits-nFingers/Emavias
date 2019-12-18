@@ -85,18 +85,6 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:textColorHint="#ccc"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:id="@+id/verificarMateial"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@drawable/btn_fondo_color"
-            android:text="Verificar"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:elevation="5dp"/>
 
     </LinearLayout>
 

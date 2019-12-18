@@ -44,4 +44,5 @@ public class BuscarMaterial extends FragmentActivity implements OnMapReadyCallba
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
+
 }

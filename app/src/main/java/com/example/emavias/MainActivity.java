@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        String URL = "http://localhost/jsbcscmlkmisn";
+        /*String URL = "http://localhost/jsbcscmlkmisn";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
         JsonObjectRequest objectRequest = new JsonObjectRequest(
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        requestQueue.add(objectRequest);
+        requestQueue.add(objectRequest);*/
 
     }
 

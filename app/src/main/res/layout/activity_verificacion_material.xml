@@ -86,6 +86,12 @@
             android:paddingBottom="10dp"
             android:textColorHint="#ccc"/>
 
+        <TextView
+            android:id="@+id/texto_TV"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="TextView" />
+
     </LinearLayout>
 
 

@@ -24,7 +24,6 @@ public class Inventario extends AppCompatActivity {
 
     Button inventario;
     EditText verificar;
-    String C1=verificar.getText().toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +36,7 @@ public class Inventario extends AppCompatActivity {
 
     public void validar(){
         //boolean retorno=true;
-
+        String C1=verificar.getText().toString();
         if (C1.isEmpty()){
             verificar.setError("Este campo no puede ser estar vacio");
             //retorno = false;
@@ -58,6 +57,7 @@ public class Inventario extends AppCompatActivity {
     }
 
     public String getVerificar() {
+        String C1=verificar.getText().toString();
         return C1;
     }
 

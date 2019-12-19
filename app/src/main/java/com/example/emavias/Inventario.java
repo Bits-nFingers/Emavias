@@ -24,23 +24,26 @@ public class Inventario extends AppCompatActivity {
 
     Button inventario;
     EditText verificar;
+    String resultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventario);
-        verificar = findViewById(R.id.et_verificarMaterial);
+        verificar = (EditText) findViewById(R.id.et_verificarMaterial);
         inventario = (Button) findViewById(R.id.buscarInv);
-
+        String C1 = verificar.getText().toString();
+        resultado = C1;
     }
 
     public void validar(){
         //boolean retorno=true;
-        String C1=verificar.getText().toString();
-        if (C1.isEmpty()){
+
+
+        if (resultado.isEmpty()){
             verificar.setError("Este campo no puede ser estar vacio");
             //retorno = false;
-        }else if(C1.equals("Pintura Amarilla")){
+        }else if(resultado.equals("Pintura Amarilla")){
             inventario.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View view) {
@@ -57,8 +60,7 @@ public class Inventario extends AppCompatActivity {
     }
 
     public String getVerificar() {
-        String C1=verificar.getText().toString();
-        return C1;
+        return resultado;
     }
 
     private void getPosts_Inventario(){

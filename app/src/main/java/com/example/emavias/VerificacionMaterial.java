@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class VerificacionMaterial extends AppCompatActivity {
     Inventario i = new Inventario();
     TextView nombre, cantidad, serie, fecha;
+    String res;
 
 
     @Override
@@ -23,7 +24,7 @@ public class VerificacionMaterial extends AppCompatActivity {
         serie = (TextView)findViewById(R.id.tw_nDserie);
         fecha = (TextView)findViewById(R.id.tw_fecha);
         //named = findViewById(R.id.texto_TV);
-        //i.getVerificar();
+        res = i.getVerificar();
     }
 
     public void validar(){
@@ -31,7 +32,7 @@ public class VerificacionMaterial extends AppCompatActivity {
 
         //String C1= .getText().toString();
 
-        if (true){
+        if (res.equals("Pintura Amarilla")){
             nombre.setText("Pintura Amarilla");
             cantidad.setText("42");
             serie.setText("9373");

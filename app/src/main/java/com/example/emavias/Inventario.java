@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.emavias.Interface.JsonPlaceHolderApi;
 import com.example.emavias.Model.Posts_Inventario;
@@ -21,21 +23,45 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Inventario extends AppCompatActivity {
 
     Button inventario;
+    EditText verificar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inventario);
-
+        verificar = findViewById(R.id.et_verificarMaterial);
         inventario = (Button) findViewById(R.id.buscarInv);
-        inventario.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Inventario.this, VerificacionMaterial.class));
 
-            }
-        });
     }
+
+    public void validar(){
+        //boolean retorno=true;
+
+        String C1=verificar.getText().toString();
+
+        if (C1.isEmpty()){
+            verificar.setError("Este campo no puede ser estar vacio");
+            //retorno = false;
+        }else if(C1.equals("Pintura Amarilla")){
+            inventario.setOnClickListener(new View.OnClickListener(){
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(Inventario.this, VerificacionMaterial.class));
+
+                }
+            });
+        }
+        else{
+            Toast.makeText(this, "Material inexistente", Toast.LENGTH_SHORT).show();
+        }
+
+        //return retorno;
+    }
+
+    public EditText getVerificar() {
+        return verificar;
+    }
+
     private void getPosts_Inventario(){
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://localhost:9000/api/")

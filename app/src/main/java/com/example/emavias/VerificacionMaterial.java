@@ -23,7 +23,7 @@ public class VerificacionMaterial extends AppCompatActivity {
         serie = (TextView)findViewById(R.id.tw_nDserie);
         fecha = (TextView)findViewById(R.id.tw_fecha);
         //named = findViewById(R.id.texto_TV);
-        i.getVerificar();
+        //i.getVerificar();
     }
 
     public void validar(){
@@ -31,7 +31,7 @@ public class VerificacionMaterial extends AppCompatActivity {
 
         //String C1= .getText().toString();
 
-        if (i.equals("Pintura Amarilla")){
+        if (true){
             nombre.setText("Pintura Amarilla");
             cantidad.setText("42");
             serie.setText("9373");

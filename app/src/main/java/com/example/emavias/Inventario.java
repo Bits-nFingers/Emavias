@@ -59,8 +59,8 @@ public class Inventario extends AppCompatActivity {
         //return retorno;
     }
 
-    public String getVerificar() {
-        return resultado;
+    public EditText getVerificar() {
+        return verificar;
     }
 
     private void getPosts_Inventario(){

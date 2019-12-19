@@ -12,7 +12,7 @@ import android.widget.Toast;
 public class VerificacionMaterial extends AppCompatActivity {
     Inventario i = new Inventario();
     TextView nombre, cantidad, serie, fecha;
-    String res;
+    EditText res;
 
 
     @Override

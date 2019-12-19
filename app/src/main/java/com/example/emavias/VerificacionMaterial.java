@@ -11,17 +11,17 @@ import android.widget.Toast;
 
 public class VerificacionMaterial extends AppCompatActivity {
     Inventario i = new Inventario();
-    EditText nombre, cantidad, serie, fecha;
-    TextView named;
+    TextView nombre, cantidad, serie, fecha;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verificacion_material);
-        nombre = findViewById(R.id.et_material);
-        cantidad = findViewById(R.id.et_cantidad);
-        serie = findViewById(R.id.et_nDSerie);
-        fecha = findViewById(R.id.et_fecha);
+        nombre = findViewById(R.id.tw_material);
+        cantidad = findViewById(R.id.tw_cantidad);
+        serie = findViewById(R.id.tw_nDserie);
+        fecha = findViewById(R.id.tw_fecha);
         //named = findViewById(R.id.texto_TV);
         i.getVerificar();
     }

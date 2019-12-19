@@ -18,10 +18,10 @@ public class VerificacionMaterial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verificacion_material);
-        nombre = findViewById(R.id.tw_material);
-        cantidad = findViewById(R.id.tw_cantidad);
-        serie = findViewById(R.id.tw_nDserie);
-        fecha = findViewById(R.id.tw_fecha);
+        nombre = (TextView)findViewById(R.id.tw_material);
+        cantidad = (TextView)findViewById(R.id.tw_cantidad);
+        serie = (TextView)findViewById(R.id.tw_nDserie);
+        fecha = (TextView)findViewById(R.id.tw_fecha);
         //named = findViewById(R.id.texto_TV);
         i.getVerificar();
     }

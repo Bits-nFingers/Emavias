@@ -41,6 +41,6 @@ public class VerificacionMaterial extends AppCompatActivity {
             Toast.makeText(this, "Material inexistente", Toast.LENGTH_SHORT).show();
         }
 
-        //return retorno;
+        //return retorno; jydydgjuig
     }
 }
